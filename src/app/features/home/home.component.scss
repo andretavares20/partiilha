@@ -1,0 +1,143 @@
+.home-container {
+    background: linear-gradient(135deg, #9f64b5, #391b65);
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+
+    .topbar {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 80px;
+                margin-right: 0.1rem;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+        }
+
+        nav a {
+            margin-left: 2rem;
+            color: #f4e1d5;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .main-content {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #f4e1d5;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #f4e1d5;
+            margin-top: 1rem;
+        }
+
+        .avatars {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+
+            .avatar-wrapper {
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin-left: -20px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                &.pink {
+                    background-color: #fbb5d3;
+                }
+
+                &.yellow {
+                    background-color: #fed97b;
+                }
+
+                &.blue {
+                    background-color: #b7e3f4;
+                }
+
+                &.purple {
+                    background-color: #d6c2f7;
+                }
+
+                &.lilac {
+                    background-color: #cfc6e5;
+                }
+            }
+        }
+
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .btn-primary {
+                background-color: #f19b60;
+                border: none;
+                border-radius: 2rem;
+                padding: 1rem 2rem;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .btn-secondary {
+                background-color: #f4e1d5;
+                color: #391b65;
+                border: none;
+                border-radius: 2rem;
+                padding: 1rem 2rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+        .trustpilot {
+            font-size: 0.9rem;
+            color: #f4e1d5;
+
+            .trustpilot-logo {
+                color: #00b67a;
+                font-weight: bold;
+            }
+        }
+    }
+}
