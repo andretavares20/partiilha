@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-deep-purple: #391B65;
+  --color-light-peach: #F4E1D5;
+  --color-orange: #F19B60;
+  --color-pink: #D96A85;
+  --color-lavender: #9F64B5;
+  --color-soft-orange: #F7B37D;
+
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-light-peach);
+  color: var(--color-deep-purple);
+}
