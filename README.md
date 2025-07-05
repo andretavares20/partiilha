@@ -1,10 +1,10 @@
 # Partilha
 
-**Partilha** é uma plataforma web inspirada no [Spliiit](https://www.spliiit.com/pt) que permite o compartilhamento de assinaturas digitais e serviços online entre pessoas, de forma prática, segura e econômica.
+**Partilha** é uma plataforma web para compartilhamento de assinaturas digitais e serviços online entre pessoas, de forma prática, segura e econômica.
 
 ## 🔥 Objetivo
 
-Facilitar a divisão de custos de planos e assinaturas (como Netflix, Spotify, Disney+, etc.), conectando donos de contas com interessados em compartilhar o valor mensal dos serviços.
+Facilitar a divisão de custos de planos e assinaturas (como streaming, softwares, etc.), conectando donos de contas com interessados em compartilhar o valor mensal dos serviços.
 
 ## 🚀 Funcionalidades
 
