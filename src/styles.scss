@@ -7,11 +7,13 @@
   --color-soft-orange: #F7B37D;
 
   --font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   background-color: var(--color-light-peach);
   color: var(--color-deep-purple);
 }
