@@ -4,7 +4,7 @@
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    padding: 2rem;
+    padding: 2rem 0 0 0;
     margin: 0 auto;
 
     .topbar {
@@ -145,10 +145,17 @@
 }
 
 .shared-subscriptions {
+    margin-top: 14rem;
     background: transparent;
     padding: 4rem 2rem;
+    position: relative;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+
+
 
     .subscription-wrapper {
+        position: relative;
         background-color: #311850;
         border-radius: 2rem;
         padding: 2.5rem 2rem;
@@ -156,9 +163,9 @@
         margin: 0 auto;
         color: #fff;
         display: flex;
-        // gap: 2rem;
         justify-content: space-between;
-        align-items: stretch; // <- força mesma altura para os dois lados
+        align-items: stretch;
+        z-index: 1;
 
         @media (max-width: 900px) {
             flex-direction: column;
@@ -175,7 +182,6 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-
         }
 
         h2 {
@@ -219,18 +225,18 @@
         .card {
             background-color: #4d2a6d;
             border-radius: 1.5rem;
-            padding: 1.5rem 1rem; // menor espaçamento interno
+            padding: 1.5rem 1rem;
             width: 170px;
-            height: auto; // permite crescer conforme conteúdo
+            height: auto;
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; // começa do topo
+            justify-content: flex-start;
             align-items: center;
             min-height: 280px;
 
             .logo {
-                height: 44px; // leve aumento do logo
+                height: 44px;
                 margin-bottom: 0.4rem;
 
                 img {
@@ -241,7 +247,7 @@
             }
 
             p {
-                font-size: 1.3rem; // aumenta fonte do preço
+                font-size: 1.3rem;
                 color: #f4e1d5;
                 margin: 0 0 0.6rem;
             }
@@ -261,17 +267,17 @@
             }
 
             .btn-secondary {
-                background-color: #dc7077; // tom mais parecido com o da imagem referência
+                background-color: #dc7077;
                 color: #fff;
                 border: none;
-                padding: 0.7rem 1.6rem; // altura e largura maiores
+                padding: 0.7rem 1.6rem;
                 border-radius: 2rem;
                 font-weight: 600;
                 cursor: pointer;
-                font-size: 1rem; // um pouco maior
+                font-size: 1rem;
                 transition: all 0.2s;
-                margin-top: auto; // empurra para o final do card
-                margin-bottom: 0.4rem; // espaço entre botão e base do card
+                margin-top: auto;
+                margin-bottom: 0.4rem;
 
                 &:hover {
                     background-color: #e26b85;
@@ -281,13 +287,17 @@
     }
 }
 
-
-
-
 .how-it-works {
     background-color: #fff2e0;
     padding: 4rem 2rem;
-    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    .container {
+        max-width: 1200px; // ou o mesmo valor do restante do layout
+        margin: 0 auto;
+        text-align: center;
+    }
 
     h2 {
         font-size: 2rem;
@@ -298,7 +308,7 @@
     .steps {
         display: flex;
         justify-content: center;
-        gap: 3rem;
+        gap: 14rem;
         flex-wrap: wrap;
 
         .step {
@@ -308,15 +318,118 @@
             align-items: center;
 
             img {
-                width: 70px;
-                height: 70px;
-                margin-bottom: 1rem;
+                width: 10rem;
+                height: 10rem;
             }
 
             p {
                 font-weight: 500;
                 color: #3c2078;
+                white-space: nowrap;
+                text-align: center;
             }
         }
+    }
+}
+
+.wave-divider {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -5px;
+    /* para "colar" visualmente com a seção de cima */
+}
+
+.wave-divider svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.bottom-transition {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -2px;
+}
+
+.bottom-transition svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+.subscription-options {
+    background-color: #fff2e0;
+    padding: 4rem 2rem;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 6rem;
+    }
+
+    .option-card {
+        border-radius: 2rem;
+        padding: 2rem 2rem 0 2rem;
+        flex: 1 1 480px;
+        max-width: 500px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 3.5rem;
+            color: #391b65;
+            margin: 0rem 0rem 0rem 0rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        p {
+            color: #4b4b4b;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            // margin-bottom: 2rem;
+        }
+
+        img {
+            align-self: center;
+            max-width: 380px;
+            height: auto;
+            object-fit: contain;
+            margin-top: -4rem;
+        }
+
+        &.vaga {
+            background-color: #ffe9e3;
+        }
+
+        &.assinatura {
+            background: linear-gradient(135deg, #fbb57e, #f497aa);
+
+            img {
+                transform: translateY(-1rem); // Sobe só essa imagem
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .subscription-options .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-options .option-card {
+        max-width: 90%;
     }
 }
